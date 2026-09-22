@@ -1,0 +1,147 @@
+export type Lang = "es" | "en";
+
+const es = {
+  nav: {
+    about: "Sobre mí",
+    projects: "Proyectos",
+    skills: "Habilidades",
+    contact: "Contacto",
+  },
+  hero: {
+    eyebrow: "Desarrollador full-stack · Ecuador",
+    titleStart: "Software completo,",
+    titleEnd: "del backend al móvil.",
+    sub: "Diseño, desarrollo y despliego plataformas web y móviles sobre TypeScript, Node y PostgreSQL para negocios e instituciones.",
+    primary: "Ver proyectos",
+    secondary: "GitHub",
+    tiles: "Proyectos",
+  },
+  about: {
+    heading: "Sobre mí",
+    tag: "01 · about",
+    body1: "Soy Leiver, desarrollador full-stack de El Oro, Ecuador. Me gusta construir productos completos — desde la base de datos hasta la app móvil — con código limpio, buenas decisiones de arquitectura y repositorios que cualquiera pueda abrir.",
+    body2: "Trabajo con el ecosistema TypeScript de punta a punta: NestJS en el backend, Next.js y React en la web, Expo en el móvil y PostgreSQL como columna vertebral.",
+    highlights: [
+      "Trazabilidad EUDR de exportación de camarón",
+      "Sistemas de gestión para universidades y restaurantes",
+      "Aplicaciones móviles con React Native y Flutter",
+    ],
+    location: "El Oro, Ecuador",
+  },
+  projects: {
+    heading: "Proyectos destacados",
+    intro: "Cuatro sistemas reales que construí de punta a punta.",
+    flagship: "Destacado",
+    demo: "Demo en vivo",
+    source: "Código",
+    index: "proyecto",
+  },
+  skills: {
+    heading: "Habilidades",
+    intro: "El stack con el que trabajo todos los días.",
+    groups: {
+      frontend: "Frontend",
+      backend: "Backend",
+      databases: "Bases de datos",
+      devops: "DevOps y cloud",
+      qa: "Calidad",
+    },
+  },
+  extra: {
+    heading: "También en GitHub",
+    intro: "Proyectos adicionales y versiones de escritorio.",
+    source: "Ver código",
+  },
+  contact: {
+    heading: "¿Hablamos?",
+    intro: "Un proyecto entre manos, una vacante abierta o solo curiosidad por algún repo. Respondo rápido.",
+    email: "Escríbeme",
+    github: "GitHub",
+    linkedin: "LinkedIn",
+  },
+  footer: {
+    madeIn: "Hecho en El Oro, Ecuador",
+    backToTop: "Subir",
+  },
+  common: {
+    themeLight: "Modo claro",
+    themeDark: "Modo oscuro",
+    langLabel: "Idioma",
+    openInNew: "Abrir en pestaña nueva",
+  },
+};
+
+const en: typeof es = {
+  nav: {
+    about: "About",
+    projects: "Projects",
+    skills: "Skills",
+    contact: "Contact",
+  },
+  hero: {
+    eyebrow: "Full-stack developer · Ecuador",
+    titleStart: "Full-stack software,",
+    titleEnd: "from backend to mobile.",
+    sub: "I design, build and ship web and mobile platforms on TypeScript, Node and PostgreSQL for businesses and institutions.",
+    primary: "View projects",
+    secondary: "GitHub",
+    tiles: "Projects",
+  },
+  about: {
+    heading: "About",
+    tag: "01 · about",
+    body1: "I'm Leiver, a full-stack developer from El Oro, Ecuador. I enjoy building complete products — from the database to the mobile app — with clean code, sound architecture decisions and repositories anyone can open.",
+    body2: "I work across the whole TypeScript ecosystem: NestJS on the backend, Next.js and React on the web, Expo on mobile and PostgreSQL as the backbone.",
+    highlights: [
+      "EUDR traceability for shrimp exports",
+      "Management systems for universities and restaurants",
+      "Mobile apps with React Native and Flutter",
+    ],
+    location: "El Oro, Ecuador",
+  },
+  projects: {
+    heading: "Featured projects",
+    intro: "Four real systems I built end-to-end.",
+    flagship: "Flagship",
+    demo: "Live demo",
+    source: "Source",
+    index: "project",
+  },
+  skills: {
+    heading: "Skills",
+    intro: "The stack I work with every day.",
+    groups: {
+      frontend: "Frontend",
+      backend: "Backend",
+      databases: "Databases",
+      devops: "DevOps & cloud",
+      qa: "QA",
+    },
+  },
+  extra: {
+    heading: "Also on GitHub",
+    intro: "Additional projects and desktop versions.",
+    source: "View code",
+  },
+  contact: {
+    heading: "Let's talk?",
+    intro: "A project in the works, an open role, or just curious about a repo. I reply fast.",
+    email: "Write to me",
+    github: "GitHub",
+    linkedin: "LinkedIn",
+  },
+  footer: {
+    madeIn: "Made in El Oro, Ecuador",
+    backToTop: "Back to top",
+  },
+  common: {
+    themeLight: "Light mode",
+    themeDark: "Dark mode",
+    langLabel: "Language",
+    openInNew: "Open in new tab",
+  },
+};
+
+export const translations = { es, en };
+
+export type Translation = typeof es;
