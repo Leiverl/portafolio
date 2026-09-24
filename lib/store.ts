@@ -85,14 +85,6 @@ export function setTheme(next: Theme) {
   emit();
 }
 
-export function subscribeLang(cb: () => void) {
-  return subscribe(cb);
-}
-
-export function subscribeTheme(cb: () => void) {
-  return subscribe(cb);
-}
-
 export function getLangServerSnapshot(): Lang {
   return "es";
 }

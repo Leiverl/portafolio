@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://portafolio-leiver.vercel.app",
+  ),
   title: {
     default: "Leiver — Full-stack developer",
     template: "%s — Leiver",
@@ -36,6 +39,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_EC",
     siteName: "Leiver",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leiver — Full-stack developer",
+    description:
+      "Full-stack developer from Ecuador building web and mobile platforms on TypeScript, Node and PostgreSQL.",
   },
 };
 

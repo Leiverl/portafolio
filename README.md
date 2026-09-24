@@ -29,6 +29,7 @@ npm run start   # sirve el build
 
 ## Despliegue
 
-Deploy estándar de Next.js en Vercel. La única configuración extra es el
-`remotePatterns` de imágenes en `next.config.ts` (picsum.photos para las
-portadas de proyectos).
+Deploy estándar de Next.js en Vercel.
+
+- Variable opcional `NEXT_PUBLIC_SITE_URL` (tu dominio, ej. `https://portafolio-leiver.vercel.app`) para resolver la imagen de Open Graph. Sin ella se usa un fallback.
+- La única otra configuración es el `remotePatterns` de imágenes en `next.config.ts` (picsum.photos para las portadas de proyectos).
