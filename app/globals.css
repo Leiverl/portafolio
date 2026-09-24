@@ -61,6 +61,11 @@ body {
   outline-offset: 2px;
 }
 
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

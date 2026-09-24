@@ -10,7 +10,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="border-y border-line bg-surface mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
+      className="cv-auto border-y border-line bg-surface mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
     >
       <Reveal className="max-w-md">
         <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">

@@ -26,7 +26,7 @@ function CardLinks({ project }: { project: Project }) {
   const { t } = useApp();
   return (
     <div className="flex flex-wrap items-center gap-2.5">
-      {project.demo && (
+      {project.demo ? (
         <a
           href={project.demo}
           target="_blank"
@@ -41,7 +41,7 @@ function CardLinks({ project }: { project: Project }) {
             className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
           />
         </a>
-      )}
+      ) : null}
       <a
         href={project.repo}
         target="_blank"
@@ -90,7 +90,7 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
           >
             {project.monogram}
           </span>
-          {project.featured && <FlagshipBadge />}
+          {project.featured ? <FlagshipBadge /> : null}
         </div>
         <div className="flex flex-col justify-between gap-5 p-6 md:p-8">
           <div>
@@ -179,7 +179,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
+      className="cv-auto mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
     >
       <Reveal className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <h2 className="max-w-md text-3xl font-semibold tracking-tight sm:text-4xl">

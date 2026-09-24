@@ -9,7 +9,7 @@ export function Extra() {
   const { t, lang } = useApp();
 
   return (
-    <section className="mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-28">
+    <section className="cv-auto mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-28">
       <Reveal className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <h2 className="max-w-md text-3xl font-semibold tracking-tight sm:text-4xl">
           {t.extra.heading}

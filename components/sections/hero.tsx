@@ -5,14 +5,21 @@ import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 import { projects } from "@/lib/site-config";
 
+const EASE = [0.16, 1, 0.3, 1] as const;
+
+const tileSetup = {
+  initial: { opacity: 0, y: 32 },
+  animate: { opacity: 1, y: 0 },
+};
+
 export function Hero() {
   const { t, lang } = useApp();
   const reduce = useReducedMotion();
 
   const tile = (i: number) => ({
-    initial: reduce ? undefined : { opacity: 0, y: 32 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, delay: 0.25 + i * 0.12, ease: [0.16, 1, 0.3, 1] as const },
+    initial: reduce ? undefined : tileSetup.initial,
+    animate: tileSetup.animate,
+    transition: { duration: 0.7, delay: 0.25 + i * 0.12, ease: EASE },
   });
 
   return (
@@ -26,7 +33,7 @@ export function Hero() {
           <motion.p
             initial={reduce ? undefined : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, ease: EASE }}
             className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent"
           >
             {t.hero.eyebrow}
@@ -35,7 +42,7 @@ export function Hero() {
           <motion.h1
             initial={reduce ? undefined : { opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, delay: 0.08, ease: EASE }}
             className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tighter sm:text-5xl lg:text-6xl"
           >
             {t.hero.titleStart}
@@ -46,7 +53,7 @@ export function Hero() {
           <motion.p
             initial={reduce ? undefined : { opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, delay: 0.16, ease: EASE }}
             className="mt-6 max-w-md text-base leading-relaxed text-muted md:text-lg"
           >
             {t.hero.sub}
@@ -55,7 +62,7 @@ export function Hero() {
           <motion.div
             initial={reduce ? undefined : { opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.24, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, delay: 0.24, ease: EASE }}
             className="mt-9 flex flex-wrap items-center gap-3"
           >
             <a

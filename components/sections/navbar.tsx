@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Moon, Sun } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 
+const NAV_KEYS = ["about", "projects", "skills", "contact"] as const;
+
 export function Navbar() {
   const { t, lang, setLang, theme, setTheme } = useApp();
 
@@ -18,20 +20,13 @@ export function Navbar() {
         </div>
 
         <div className="hidden items-center gap-7 text-sm text-muted md:flex">
-          {(
-            [
-              { href: "#about", label: t.nav.about },
-              { href: "#projects", label: t.nav.projects },
-              { href: "#skills", label: t.nav.skills },
-              { href: "#contact", label: t.nav.contact },
-            ] as const
-          ).map((item) => (
+          {NAV_KEYS.map((key) => (
             <Link
-              key={item.href}
-              href={item.href}
+              key={key}
+              href={`#${key}`}
               className="transition-colors hover:text-foreground focus-ring rounded-sm"
             >
-              {item.label}
+              {t.nav[key]}
             </Link>
           ))}
         </div>
