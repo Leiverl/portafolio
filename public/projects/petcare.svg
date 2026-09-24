@@ -1,0 +1,102 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="Roboto, ui-sans-serif, system-ui, sans-serif">
+  <rect width="1200" height="800" fill="#f2f4f8"/>
+
+  <rect width="200" height="800" fill="#ffffff"/>
+  <rect x="16" y="16" width="168" height="40" rx="10" fill="#e8eeff"/>
+  <text x="34" y="41" font-size="20" font-weight="700" fill="#0b57d0">🐾</text>
+  <text x="58" y="41" font-size="16" font-weight="700" fill="#1b2430">PetCare</text>
+
+  <g font-size="13" fill="#1b2430">
+    <rect x="16" y="80" width="168" height="42" rx="10" fill="#dde6ff"/>
+    <text x="38" y="106" font-weight="600" fill="#0b57d0">●  Dashboard</text>
+    <text x="38" y="152" fill="#5f6368">Mascotas</text>
+    <text x="38" y="196" fill="#5f6368">Adopciones</text>
+    <text x="38" y="240" fill="#5f6368">Refugios</text>
+    <text x="38" y="284" fill="#5f6368">Usuarios</text>
+    <text x="38" y="328" fill="#5f6368">Chat en vivo</text>
+  </g>
+  <rect x="16" y="730" width="168" height="42" rx="10" fill="#f0f1f4"/>
+  <text x="38" y="756" font-size="13" fill="#1b2430">Admin · Sra. Vega</text>
+
+  <rect x="200" y="0" width="1000" height="64" fill="#ffffff"/>
+  <text x="232" y="39" font-size="20" font-weight="700" fill="#1b2430">Desarrollos de adopción</text>
+  <circle cx="1130" cy="32" r="16" fill="#0b57d0"/>
+  <text x="1130" y="38" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">AV</text>
+
+  <g>
+    <rect x="224" y="88" width="672" height="48" rx="12" fill="#ffffff"/>
+    <text x="244" y="117" font-size="13" font-weight="600" fill="#1b2430">Solicitudes recientes</text>
+    <rect x="748" y="98" width="130" height="28" rx="8" fill="#f2f4f8"/>
+    <text x="768" y="117" font-size="12" fill="#5f6368">Filtrar por estado</text>
+
+    <rect x="224" y="152" width="672" height="48" rx="12" fill="#ffffff"/>
+    <text x="244" y="180" font-size="12" fill="#8a94a6">MASCOTA</text>
+    <text x="600" y="180" font-size="12" fill="#8a94a6" text-anchor="middle">SOLICITANTE</text>
+    <text x="860" y="180" font-size="12" fill="#8a94a6" text-anchor="middle">ESTADO</text>
+
+    <g font-size="13" fill="#1b2430">
+      <rect x="224" y="200" width="672" height="64" rx="12" fill="#ffffff"/>
+      <circle cx="254" cy="232" r="18" fill="#f6e3b2"/><text x="254" y="238" font-size="13">🐶</text>
+      <text x="286" y="226" font-weight="600">Luna</text>
+      <text x="286" y="248" font-size="12" fill="#5f6368">Mestizo · Beagle</text>
+      <text x="600" y="236" font-size="12.5" fill="#333a47">María Fernanda P.</text>
+      <rect x="824" y="222" width="76" height="22" rx="11" fill="#d3e3fd"/>
+      <text x="862" y="237" font-size="11" font-weight="600" fill="#0b57d0" text-anchor="middle">En revisión</text>
+
+      <rect x="224" y="276" width="672" height="64" rx="12" fill="#ffffff"/>
+      <circle cx="254" cy="308" r="18" fill="#d9f0e3"/><text x="254" y="314" font-size="13">🐱</text>
+      <text x="286" y="302" font-weight="600">Negro</text>
+      <text x="286" y="324" font-size="12" fill="#5f6368">Común europeo</text>
+      <text x="600" y="312" font-size="12.5" fill="#333a47">Andrés Salazar</text>
+      <rect x="824" y="298" width="76" height="22" rx="11" fill="#d1fae5"/>
+      <text x="862" y="313" font-size="11" font-weight="600" fill="#047857" text-anchor="middle">Aprobada</text>
+
+      <rect x="224" y="352" width="672" height="64" rx="12" fill="#ffffff"/>
+      <circle cx="254" cy="384" r="18" fill="#fde3dc"/><text x="254" y="390" font-size="13">🐹</text>
+      <text x="286" y="378" font-weight="600">Pelusa</text>
+      <text x="286" y="400" font-size="12" fill="#5f6368">Hámster sirio</text>
+      <text x="600" y="388" font-size="12.5" fill="#333a47">Carla Mendieta</text>
+      <rect x="824" y="376" width="76" height="22" rx="11" fill="#ffe4e1"/>
+      <text x="862" y="391" font-size="11" font-weight="600" fill="#c5221f" text-anchor="middle">Rechazada</text>
+
+      <rect x="224" y="428" width="672" height="64" rx="12" fill="#ffffff"/>
+      <circle cx="254" cy="460" r="18" fill="#e5e7f0"/><text x="254" y="466" font-size="13">🐕</text>
+      <text x="286" y="454" font-weight="600">Rocko</text>
+      <text x="286" y="476" font-size="12" fill="#5f6368">Golden Retriever</text>
+      <text x="600" y="464" font-size="12.5" fill="#333a47">Diego Moreno</text>
+      <rect x="824" y="452" width="76" height="22" rx="11" fill="#d3e3fd"/>
+      <text x="862" y="467" font-size="11" font-weight="600" fill="#0b57d0" text-anchor="middle">En revisión</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="920" y="88" width="256" height="560" rx="16" fill="#ffffff"/>
+    <text x="940" y="118" font-size="14" font-weight="700" fill="#1b2430">Chat en tiempo real</text>
+    <rect x="940" y="132" width="26" height="4" rx="2" fill="#0b57d0"/>
+
+    <rect x="940" y="156" width="130" height="12" rx="6" fill="#e8eef4"/>
+    <rect x="940" y="174" width="96" height="12" rx="6" fill="#e8eef4"/>
+    <rect x="1040" y="192" width="116" height="12" rx="6" fill="#e8eef4"/>
+    <rect x="1034" y="210" width="124" height="12" rx="6" fill="#e8eef4"/>
+
+    <rect x="942" y="240" width="212" height="30" rx="15" fill="#e8e8f0"/>
+    <text x="958" y="260" font-size="11.5" fill="#5f6368">Hola, ¿Luna está disponible?</text>
+
+    <rect x="988" y="282" width="166" height="30" rx="15" fill="#0b57d0"/>
+    <text x="1002" y="302" font-size="11.5" fill="#ffffff">¡Sí! Puedes visitarla esta tarde</text>
+
+    <rect x="954" y="324" width="200" height="30" rx="15" fill="#e8e8f0"/>
+    <text x="970" y="344" font-size="11.5" fill="#5f6368">¿A qué hora abre el refugio?</text>
+
+    <rect x="836" y="366" width="0" height="0"/>
+    <text x="956" y="412" font-size="11" fill="#a2a8b4">Sra. Vega escribiendo…</text>
+    <rect x="956" y="424" width="66" height="4" rx="2" fill="#c4cad4"/>
+    <rect x="1024" y="422" width="4" height="4" rx="2" fill="#c4cad4"/>
+    <rect x="1030" y="420" width="4" height="4" rx="2" fill="#c4cad4"/>
+
+    <rect x="940" y="600" width="216" height="32" rx="16" fill="#f2f4f8"/>
+    <text x="958" y="620" font-size="11.5" fill="#a2a8b4">Escribe un mensaje…</text>
+    <circle cx="1136" cy="616" r="12" fill="#0b57d0"/>
+    <polygon points="1130,612 1142,616 1130,620" fill="#ffffff"/>
+  </g>
+</svg>

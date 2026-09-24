@@ -1,0 +1,133 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="Inter, ui-sans-serif, system-ui, sans-serif">
+  <rect width="1200" height="800" fill="#f7f4f0"/>
+
+  <rect width="1200" height="64" fill="#ffffff"/>
+  <rect x="24" y="22" width="20" height="20" rx="6" fill="#d97706"/>
+  <text x="58" y="38" font-size="17" font-weight="700" fill="#1c1917">UniFix TI</text>
+  <text x="164" y="38" font-size="13" fill="#78716c">Facultad de Ingeniería Civil · UTMACH</text>
+  <rect x="858" y="17" width="196" height="30" rx="9" fill="#f0ece7"/>
+  <text x="874" y="36" font-size="12" fill="#a8a29e">Buscar tickets…</text>
+  <circle cx="1090" cy="32" r="15" fill="#f59e0b"/>
+  <text x="1090" y="38" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">AD</text>
+
+  <g>
+    <rect x="24" y="88" width="270" height="112" rx="14" fill="#ffffff"/>
+    <text x="44" y="118" font-size="13" fill="#78716c">Reportados hoy</text>
+    <text x="44" y="158" font-size="30" font-weight="700" fill="#1c1917">12</text>
+    <rect x="210" y="104" width="64" height="22" rx="11" fill="#fef3c7"/>
+    <text x="242" y="119" font-size="11" font-weight="600" fill="#b45309" text-anchor="middle">+3 vs ayer</text>
+
+    <rect x="312" y="88" width="270" height="112" rx="14" fill="#ffffff"/>
+    <circle cx="344" cy="120" r="5" fill="#f59e0b"/>
+    <text x="360" y="124" font-size="13" fill="#78716c">En proceso</text>
+    <text x="332" y="164" font-size="30" font-weight="700" fill="#1c1917">8</text>
+    <line x1="332" y1="182" x2="470" y2="182" stroke="#e5e0da" stroke-width="3" stroke-linecap="round"/>
+    <polyline points="480,182 500,172 520,180 540,164 560,168" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="600" y="88" width="270" height="112" rx="14" fill="#ffffff"/>
+    <text x="620" y="118" font-size="13" fill="#78716c">Resueltos (mes)</text>
+    <text x="620" y="158" font-size="30" font-weight="700" fill="#34d399">47</text>
+
+    <rect x="888" y="88" width="288" height="112" rx="14" fill="#ffffff"/>
+    <text x="908" y="118" font-size="13" fill="#78716c">Tiempo promedio</text>
+    <text x="908" y="158" font-size="30" font-weight="700" fill="#1c1917">4,2 h</text>
+    <text x="908" y="182" font-size="12" fill="#a8a29e">▼ 0,8 h vs semana anterior</text>
+  </g>
+
+  <rect x="24" y="224" width="820" height="552" rx="16" fill="#ffffff"/>
+  <g font-size="13" font-weight="700" fill="#292524">
+    <circle cx="48" cy="254" r="5" fill="#f59e0b"/>
+    <text x="64" y="259">Pendientes</text>
+    <circle cx="314" cy="254" r="5" fill="#fb923c"/>
+    <text x="330" y="259">En progreso</text>
+    <circle cx="582" cy="254" r="5" fill="#34d399"/>
+    <text x="598" y="259">Resueltos</text>
+  </g>
+  <text x="764" y="259" font-size="11" fill="#a8a29e">Kanban</text>
+
+  <g>
+    <rect x="48" y="290" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="48" y="292" width="3" height="12" rx="1.5" fill="#d97706"/>
+    <text x="66" y="316" font-size="13" font-weight="600" fill="#1c1917">Proyector aula 1-B sin señal</text>
+    <text x="66" y="338" font-size="12" fill="#78716c">Aula 1-B · Bloque 1-B</text>
+    <text x="66" y="360" font-size="11" fill="#a8a29e">hace 2 h · Alta</text>
+    <rect x="238" y="300" width="46" height="20" rx="10" fill="#fef3c7"/>
+    <text x="261" y="314" font-size="10" font-weight="600" fill="#b45309" text-anchor="middle">Aula 1-B</text>
+
+    <rect x="48" y="388" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="48" y="390" width="3" height="12" rx="1.5" fill="#d97706"/>
+    <text x="66" y="414" font-size="13" font-weight="600" fill="#1c1917">No funciona el teclado del PC 24</text>
+    <text x="66" y="436" font-size="12" fill="#78716c">Lab. Computación · UAIC</text>
+    <text x="66" y="458" font-size="11" fill="#a8a29e">hace 5 h · Media</text>
+
+    <rect x="48" y="486" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="48" y="488" width="3" height="12" rx="1.5" fill="#d97706"/>
+    <text x="66" y="512" font-size="13" font-weight="600" fill="#1c1917">Cámara de seguridad sin conexión</text>
+    <text x="66" y="534" font-size="12" fill="#78716c">Entrada principal · FIC</text>
+    <text x="66" y="556" font-size="11" fill="#a8a29e">hace 6 h · Alta</text>
+  </g>
+
+  <g>
+    <rect x="314" y="290" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="314" y="292" width="3" height="12" rx="1.5" fill="#fb923c"/>
+    <text x="332" y="316" font-size="13" font-weight="600" fill="#1c1917">Reemplazar tóner impresora 3</text>
+    <text x="332" y="338" font-size="12" fill="#78716c">Oficina Adm. · FIC</text>
+    <rect x="472" y="300" width="80" height="20" rx="10" fill="#ffedd5"/>
+    <text x="512" y="314" font-size="10" font-weight="600" fill="#c2410c" text-anchor="middle">Técnico asignado</text>
+    <text x="332" y="360" font-size="11" fill="#a8a29e">en curso · 35 min</text>
+
+    <rect x="314" y="388" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="314" y="390" width="3" height="12" rx="1.5" fill="#fb923c"/>
+    <text x="332" y="414" font-size="13" font-weight="600" fill="#1c1917">Aire acondicionado no enfría</text>
+    <text x="332" y="436" font-size="12" fill="#78716c">Aula 12 · Bloque 1-B</text>
+    <rect x="472" y="424" width="80" height="20" rx="10" fill="#ffedd5"/>
+    <text x="512" y="438" font-size="10" font-weight="600" fill="#c2410c" text-anchor="middle">Técnico asignado</text>
+    <text x="332" y="460" font-size="11" fill="#a8a29e">en curso · 1 h</text>
+  </g>
+
+  <g>
+    <rect x="582" y="290" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="582" y="292" width="3" height="12" rx="1.5" fill="#34d399"/>
+    <text x="600" y="316" font-size="13" font-weight="600" fill="#1c1917">Instalación Office en PC del 25</text>
+    <text x="600" y="338" font-size="12" fill="#78716c">Lab. Computación · UAIC</text>
+    <rect x="742" y="300" width="78" height="20" rx="10" fill="#d1fae5"/>
+    <text x="781" y="314" font-size="10" font-weight="600" fill="#047857" text-anchor="middle">Cerrado · 3 min</text>
+    <text x="600" y="360" font-size="11" fill="#a8a29e">resuelto hoy</text>
+
+    <rect x="582" y="388" width="250" height="86" rx="10" fill="#f7f4f0"/>
+    <rect x="582" y="390" width="3" height="12" rx="1.5" fill="#34d399"/>
+    <text x="600" y="414" font-size="13" font-weight="600" fill="#1c1917">Cambio de proyector sala B</text>
+    <text x="600" y="436" font-size="12" fill="#78716c">Sala B · Edif. Principal</text>
+    <rect x="742" y="424" width="78" height="20" rx="10" fill="#d1fae5"/>
+    <text x="781" y="438" font-size="10" font-weight="600" fill="#047857" text-anchor="middle">Cerrado · ayer</text>
+    <text x="600" y="460" font-size="11" fill="#a8a29e">resuelto por Tec. M. Ruiz</text>
+  </g>
+
+  <rect x="868" y="224" width="308" height="254" rx="16" fill="#ffffff"/>
+  <text x="888" y="254" font-size="14" font-weight="700" fill="#1c1917">Tendencia de incidentes</text>
+  <polyline points="898,392 952,376 1006,384 1060,352 1114,364 1156,340" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="888" y1="404" x2="1156" y2="404" stroke="#e5e0da" stroke-width="1"/>
+  <text x="898" y="430" font-size="11" fill="#a8a29e">Lun</text>
+  <text x="952" y="430" font-size="11" fill="#a8a29e">Mar</text>
+  <text x="1006" y="430" font-size="11" fill="#a8a29e">Mié</text>
+  <text x="1060" y="430" font-size="11" fill="#a8a29e">Jue</text>
+  <text x="1114" y="430" font-size="11" fill="#a8a29e">Vie</text>
+  <text x="1156" y="430" font-size="11" fill="#a8a29e">Sáb</text>
+  <text x="888" y="452" font-size="12" font-weight="600" fill="#b45309">▼ 22% vs semana anterior</text>
+
+  <rect x="868" y="494" width="308" height="282" rx="16" fill="#ffffff"/>
+  <text x="888" y="524" font-size="14" font-weight="700" fill="#1c1917">Top técnicos</text>
+  <g font-size="12" fill="#292524">
+    <circle cx="900" cy="556" r="12" fill="#d97706"/><text x="900" y="561" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="922" y="561">M. Ruiz</text><text x="1110" y="561" fill="#a8a29e" text-anchor="end">18 resueltos</text>
+    <circle cx="900" cy="592" r="12" fill="#f59e0b"/><text x="900" y="597" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="922" y="597">K. Gómez</text><text x="1110" y="597" fill="#a8a29e" text-anchor="end">15 resueltos</text>
+    <circle cx="900" cy="628" r="12" fill="#fbbf24"/><text x="900" y="633" font-size="10" font-weight="700" fill="#78350f" text-anchor="middle">3</text>
+    <text x="922" y="633">D. Herrera</text><text x="1110" y="633" fill="#a8a29e" text-anchor="end">11 resueltos</text>
+  </g>
+  <rect x="900" y="664" width="244" height="32" rx="9" fill="#f0ece7"/>
+  <line x1="900" y1="684" x2="944" y2="684" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  <line x1="948" y1="684" x2="986" y2="684" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="990" y1="684" x2="1012" y2="684" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+  <text x="1128" y="684" font-size="11" font-weight="600" fill="#b45309" text-anchor="end">Gamificación</text>
+</svg>

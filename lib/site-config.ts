@@ -34,7 +34,7 @@ export const projects: Project[] = [
     monogram: "P",
     stack: ["NestJS 11", "Next.js 16", "Prisma", "PostgreSQL", "Expo", "TFLite", "Turborepo"],
     fact: "Monorepo Turborepo · 10 migraciones",
-    img: "https://picsum.photos/seed/pristino-farm/1200/800",
+    img: "/projects/pristino.png",
     featured: true,
     tagline: {
       es: "Trazabilidad sanitaria del camarón",
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     monogram: "U",
     stack: ["NestJS", "Prisma", "Next.js 14", "Expo", "PostgreSQL"],
     fact: "26 tests E2E (Playwright)",
-    img: "https://picsum.photos/seed/unifix-campus/1200/800",
+    img: "/projects/unifix.svg",
     tagline: {
       es: "Gestión de incidentes universitarios",
       en: "University IT incident management",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     monogram: "G",
     stack: ["Next.js 14", "NestJS 10", "TypeORM", "PostgreSQL"],
     fact: "Menú, reservas y pedidos en tiempo real",
-    img: "https://picsum.photos/seed/gourmetsync-table/1200/800",
+    img: "/projects/gourmetsync.webp",
     tagline: {
       es: "Plataforma integral de restaurantes",
       en: "All-in-one restaurant platform",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     monogram: "P",
     stack: ["NestJS 11", "Angular 20", "Flutter", "MongoDB", "Socket.IO"],
     fact: "3 clientes: API, panel y app",
-    img: "https://picsum.photos/seed/petcare-home/1200/800",
+    img: "/projects/petcare.svg",
     tagline: {
       es: "Adopción de mascotas, 3 clientes",
       en: "Pet adoption, 3 clients",
