@@ -125,7 +125,7 @@ export const skillGroups = [
   },
   {
     id: "devops",
-    skills: ["Railway", "Vercel", "Netlify", "Docker", "GitHub Actions"],
+    skills: ["Railway", "Vercel", "Netlify", "Docker", "GitHub Actions", "VPS Contabo"],
   },
   {
     id: "qa",
