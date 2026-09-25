@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useMemo } from "react";
 import { useSyncExternalStore } from "react";
 import type { ReactNode } from "react";
+import { MotionConfig } from "motion/react";
 import { translations } from "@/lib/translations";
 import type { Lang, Translation } from "@/lib/translations";
 import {
@@ -45,7 +46,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
     [lang, theme],
   );
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return (
+    <AppContext.Provider value={value}>
+      <MotionConfig reducedMotion="user">{children}</MotionConfig>
+    </AppContext.Provider>
+  );
 }
 
 export function useApp() {

@@ -31,7 +31,6 @@ function readTheme(): Theme {
 function applyThemeClass(theme: Theme) {
   const html = document.documentElement;
   html.classList.toggle("dark", theme === "dark");
-  html.style.colorScheme = theme;
 }
 
 export function getLang(): Lang {

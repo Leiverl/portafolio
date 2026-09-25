@@ -62,9 +62,7 @@ try {
   var theme = stored === "dark" || stored === "light"
     ? stored
     : "light";
-  var html = document.documentElement;
-  html.classList.toggle("dark", theme === "dark");
-  html.style.colorScheme = theme;
+  document.documentElement.classList.toggle("dark", theme === "dark");
 } catch (e) {}
 `;
 
@@ -73,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="es"
       className={`${barlowCondensed.variable} ${instrumentSans.variable} ${plexMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <head>
         <Script id="theme-init" strategy="beforeInteractive">

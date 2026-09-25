@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 import { PlotSheet } from "@/components/ui/plot-sheet";
@@ -14,10 +14,9 @@ const fade = {
 
 export function Hero() {
   const { t } = useApp();
-  const reduce = useReducedMotion();
 
   const motionProps = (delay: number) => ({
-    initial: reduce ? undefined : fade.initial,
+    initial: fade.initial,
     animate: fade.animate,
     transition: { duration: 0.7, delay, ease: EASE },
   });
