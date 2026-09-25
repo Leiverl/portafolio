@@ -18,15 +18,13 @@ function readLang(): Lang {
 }
 
 function readTheme(): Theme {
-  if (typeof window === "undefined") return "dark";
+  if (typeof window === "undefined") return "light";
   try {
     const stored = window.localStorage.getItem("theme");
     if (stored === "dark" || stored === "light") return stored;
-    return window.matchMedia("(prefers-color-scheme: light)").matches
-      ? "light"
-      : "dark";
+    return "light";
   } catch {
-    return "dark";
+    return "light";
   }
 }
 
@@ -90,5 +88,5 @@ export function getLangServerSnapshot(): Lang {
 }
 
 export function getThemeServerSnapshot(): Theme {
-  return "dark";
+  return "light";
 }

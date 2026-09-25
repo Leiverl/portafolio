@@ -61,7 +61,7 @@ try {
   var stored = localStorage.getItem("theme");
   var theme = stored === "dark" || stored === "light"
     ? stored
-    : (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    : "light";
   var html = document.documentElement;
   html.classList.toggle("dark", theme === "dark");
   html.style.colorScheme = theme;
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="es"
-      className={`${barlowCondensed.variable} ${instrumentSans.variable} ${plexMono.variable} h-full antialiased dark`}
+      className={`${barlowCondensed.variable} ${instrumentSans.variable} ${plexMono.variable} h-full antialiased`}
     >
       <head>
         <Script id="theme-init" strategy="beforeInteractive">
