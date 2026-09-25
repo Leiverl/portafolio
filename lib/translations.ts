@@ -28,7 +28,7 @@ const es = {
     heading: "Sobre mí",
     tag: "01 · about",
     body1: "Soy Leiver, desarrollador full-stack de El Oro, Ecuador. Me gusta construir productos completos — desde la base de datos hasta la app móvil — con código limpio, buenas decisiones de arquitectura y repositorios que cualquiera pueda abrir.",
-    body2: "Trabajo con el ecosistema TypeScript de punta a punta: NestJS en el backend, Next.js y React en la web, Expo en el móvil y PostgreSQL como columna vertebral. También me acoplo fácil a cualquier equipo o stack: si el proyecto requiere otra tecnología, proceso o herramienta, la aprendo y la asumo sin fricción.",
+    body2: "Trabajo con JavaScript y TypeScript de punta a punta: NestJS y Node en el backend, Next.js y Angular en la web, React Native y Flutter en el móvil, PostgreSQL y MongoDB en datos — y hago análisis de datos cuando el negocio lo necesita. Además me acoplo fácil a cualquier equipo o stack: si el proyecto requiere otra tecnología, proceso o herramienta, la aprendo y la asumo sin fricción.",
     highlights: [
       "Trazabilidad EUDR de exportación de camarón",
       "Sistemas de gestión para universidades y restaurantes",
@@ -109,7 +109,7 @@ const en: typeof es = {
     heading: "About",
     tag: "01 · about",
     body1: "I'm Leiver, a full-stack developer from El Oro, Ecuador. I enjoy building complete products — from the database to the mobile app — with clean code, sound architecture decisions and repositories anyone can open.",
-    body2: "I work across the whole TypeScript ecosystem: NestJS on the backend, Next.js and React on the web, Expo on mobile and PostgreSQL as the backbone. I also adapt easily to any team or stack: if the project needs another technology, process or tool, I learn it and take it on without friction.",
+    body2: "I work end-to-end with JavaScript and TypeScript: NestJS and Node on the backend, Next.js and Angular on the web, React Native and Flutter on mobile, PostgreSQL and MongoDB for data — plus data analysis when the business needs it. I also adapt easily to any team or stack: if the project needs another technology, process or tool, I learn it and take it on without friction.",
     highlights: [
       "EUDR traceability for shrimp exports",
       "Management systems for universities and restaurants",

@@ -113,7 +113,7 @@ export const extraProjects = [
 export const skillGroups = [
   {
     id: "frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "Angular", "Vite", "React Native / Expo"],
+    skills: ["React", "Next.js", "Tailwind CSS", "Angular", "Vite", "React Native"],
   },
   {
     id: "backend",
