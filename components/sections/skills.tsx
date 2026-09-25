@@ -2,6 +2,7 @@
 
 import { useApp } from "@/components/app-provider";
 import { Reveal } from "@/components/ui/reveal";
+import { SurveyRule } from "@/components/ui/survey-rule";
 import { skillGroups } from "@/lib/site-config";
 
 export function Skills() {
@@ -13,10 +14,11 @@ export function Skills() {
       className="cv-auto border-y border-line bg-surface mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
     >
       <Reveal className="max-w-md">
-        <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h2 className="font-display text-4xl font-semibold uppercase leading-none tracking-tight sm:text-5xl">
           {t.skills.heading}
         </h2>
-        <p className="mt-3 text-sm text-muted">{t.skills.intro}</p>
+        <SurveyRule />
+        <p className="mt-5 text-sm text-muted">{t.skills.intro}</p>
       </Reveal>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

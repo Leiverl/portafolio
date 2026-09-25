@@ -8,7 +8,8 @@ export function Footer() {
 
   return (
     <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-8 md:px-8">
-      <p className="font-mono text-xs text-muted">
+      <p className="flex items-center gap-2 font-mono text-xs text-muted">
+        <span aria-hidden className="inline-block h-4 w-px bg-accent" />
         © {new Date().getFullYear()} Leiver · {t.footer.madeIn}
       </p>
       <a

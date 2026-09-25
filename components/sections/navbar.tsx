@@ -12,11 +12,23 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-line/70 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 md:h-16 md:px-8">
-        <div className="flex items-center gap-3">
-          <span className="flex size-8 items-center justify-center rounded-md bg-accent font-mono text-sm font-bold text-on-accent">
+        <div className="relative flex items-center gap-3">
+          <span
+            aria-hidden
+            className="pointer-events-none absolute -left-0.5 -top-0.5 size-2 border-l-2 border-t-2 border-accent"
+          />
+          <span
+            aria-hidden
+            className="pointer-events-none absolute -bottom-0.5 -right-0.5 size-2 border-b-2 border-r-2 border-accent"
+          />
+          <span
+            className="flex size-8 items-center justify-center rounded-[3px] border border-accent bg-accent/15 font-mono text-sm font-bold text-accent"
+          >
             L
           </span>
-          <span className="text-sm font-semibold tracking-tight">Leiver</span>
+          <span className="font-mono text-sm font-semibold uppercase tracking-[0.16em] text-foreground">
+            Leiver
+          </span>
         </div>
 
         <div className="hidden items-center gap-7 text-sm text-muted md:flex">
@@ -24,7 +36,7 @@ export function Navbar() {
             <Link
               key={key}
               href={`#${key}`}
-              className="transition-colors hover:text-foreground focus-ring rounded-sm"
+              className="font-mono text-xs uppercase tracking-[0.14em] transition-colors hover:text-accent focus-ring rounded-sm"
             >
               {t.nav[key]}
             </Link>

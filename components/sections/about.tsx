@@ -3,6 +3,7 @@
 import { MapPin } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 import { Reveal } from "@/components/ui/reveal";
+import { SurveyRule } from "@/components/ui/survey-rule";
 
 export function About() {
   const { t } = useApp();
@@ -12,11 +13,11 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
         <div>
           <Reveal>
-            <p className="font-mono text-sm text-accent">{t.about.tag}</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="font-display text-4xl font-semibold uppercase leading-none tracking-tight sm:text-5xl">
               {t.about.heading}
             </h2>
-            <p className="mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-muted">
+            <SurveyRule />
+            <p className="mt-6 inline-flex items-center gap-1.5 border border-line px-2.5 py-1 font-mono text-xs text-muted">
               <MapPin size={14} weight="bold" aria-hidden />
               {t.about.location}
             </p>

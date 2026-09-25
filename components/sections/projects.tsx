@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight, GithubLogo } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 import { Reveal } from "@/components/ui/reveal";
+import { SurveyRule } from "@/components/ui/survey-rule";
 import { projects } from "@/lib/site-config";
 import type { Project } from "@/lib/site-config";
 
@@ -65,7 +66,7 @@ function FlagshipBadge() {
 }
 
 function FeaturedCard({ project, index }: { project: Project; index: number }) {
-  const { t, lang } = useApp();
+  const { lang } = useApp();
   return (
     <Reveal className="lg:col-span-2">
       <article className="grid overflow-hidden rounded-xl border border-line bg-surface lg:grid-cols-2">
@@ -94,8 +95,8 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
         </div>
         <div className="flex flex-col justify-between gap-5 p-6 md:p-8">
           <div>
-            <p className="font-mono text-xs text-muted">
-              {String(index).padStart(2, "0")} / {t.projects.index}
+            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+              LVR-0{index}
             </p>
             <h3 className="mt-2 text-2xl font-semibold tracking-tight">
               {project.name}
@@ -121,7 +122,7 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
 }
 
 function StandardCard({ project, index }: { project: Project; index: number }) {
-  const { t, lang } = useApp();
+  const { lang } = useApp();
   return (
     <Reveal className="h-full">
       <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-line bg-surface">
@@ -149,8 +150,8 @@ function StandardCard({ project, index }: { project: Project; index: number }) {
         </div>
         <div className="flex flex-1 flex-col gap-4 p-6">
           <div>
-            <p className="font-mono text-xs text-muted">
-              {String(index).padStart(2, "0")} / {t.projects.index}
+            <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
+              LVR-0{index}
             </p>
             <h3 className="mt-2 text-xl font-semibold tracking-tight">{project.name}</h3>
             <p className="mt-1 text-sm font-medium" style={{ color: project.accent }}>
@@ -181,10 +182,13 @@ export function Projects() {
       id="projects"
       className="cv-auto mx-auto max-w-6xl scroll-mt-24 px-5 py-24 md:px-8 md:py-32"
     >
-      <Reveal className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <h2 className="max-w-md text-3xl font-semibold tracking-tight sm:text-4xl">
-          {t.projects.heading}
-        </h2>
+      <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 className="font-display text-4xl font-semibold uppercase leading-none tracking-tight sm:text-5xl">
+            {t.projects.heading}
+          </h2>
+          <SurveyRule />
+        </div>
         <p className="max-w-xs text-sm text-muted">{t.projects.intro}</p>
       </Reveal>
 

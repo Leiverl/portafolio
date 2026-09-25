@@ -3,71 +3,63 @@
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight, ArrowUpRight } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
-import { projects } from "@/lib/site-config";
+import { PlotSheet } from "@/components/ui/plot-sheet";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
-const tileSetup = {
-  initial: { opacity: 0, y: 32 },
+const fade = {
+  initial: { opacity: 0, y: 24 },
   animate: { opacity: 1, y: 0 },
 };
 
 export function Hero() {
-  const { t, lang } = useApp();
+  const { t } = useApp();
   const reduce = useReducedMotion();
 
-  const tile = (i: number) => ({
-    initial: reduce ? undefined : tileSetup.initial,
-    animate: tileSetup.animate,
-    transition: { duration: 0.7, delay: 0.25 + i * 0.12, ease: EASE },
+  const motionProps = (delay: number) => ({
+    initial: reduce ? undefined : fade.initial,
+    animate: fade.animate,
+    transition: { duration: 0.7, delay, ease: EASE },
   });
 
   return (
     <section className="relative overflow-hidden">
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 right-[-20%] size-[560px] rounded-full bg-accent opacity-[0.07] blur-3xl"
+        className="pointer-events-none absolute left-1/2 top-[-20rem] h-[34rem] w-[46rem] -translate-x-1/2 rounded-[50%] bg-accent opacity-[0.06] blur-3xl"
       />
-      <div className="mx-auto grid min-h-dvh max-w-6xl items-center gap-14 px-5 pb-20 pt-28 md:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:pt-24">
+      <div className="mx-auto grid min-h-dvh max-w-6xl items-center gap-14 px-5 pb-24 pt-32 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:pt-28">
         <div>
           <motion.p
-            initial={reduce ? undefined : { opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: EASE }}
-            className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent"
+            {...motionProps(0)}
+            className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent"
           >
             {t.hero.eyebrow}
           </motion.p>
 
           <motion.h1
-            initial={reduce ? undefined : { opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.08, ease: EASE }}
-            className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tighter sm:text-5xl lg:text-6xl"
+            {...motionProps(0.08)}
+            className="mt-6 font-display text-5xl font-semibold uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl"
           >
             {t.hero.titleStart}
             <br />
-            <em className="not-italic text-accent">{t.hero.titleEnd}</em>
+            <span className="text-accent">{t.hero.titleEnd}</span>
           </motion.h1>
 
           <motion.p
-            initial={reduce ? undefined : { opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.16, ease: EASE }}
+            {...motionProps(0.16)}
             className="mt-6 max-w-md text-base leading-relaxed text-muted md:text-lg"
           >
             {t.hero.sub}
           </motion.p>
 
           <motion.div
-            initial={reduce ? undefined : { opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.24, ease: EASE }}
+            {...motionProps(0.24)}
             className="mt-9 flex flex-wrap items-center gap-3"
           >
             <a
               href="#projects"
-              className="focus-ring group inline-flex h-11 items-center gap-2 rounded-lg bg-accent px-5 text-sm font-semibold text-on-accent transition-transform active:scale-[0.98]"
+              className="focus-ring group inline-flex h-11 items-center gap-2 rounded-[4px] bg-accent px-5 text-sm font-semibold text-on-accent transition-transform active:scale-[0.98]"
             >
               {t.hero.primary}
               <ArrowRight
@@ -81,7 +73,7 @@ export function Hero() {
               href="https://github.com/Leiverl"
               target="_blank"
               rel="noopener noreferrer"
-              className="focus-ring inline-flex h-11 items-center gap-2 rounded-lg border border-line px-5 text-sm font-semibold transition-colors hover:bg-surface-raised active:scale-[0.98]"
+              className="focus-ring inline-flex h-11 items-center gap-2 rounded-[4px] border border-line px-5 text-sm font-semibold transition-colors hover:bg-surface-raised active:scale-[0.98]"
             >
               {t.hero.secondary}
               <ArrowUpRight size={16} weight="bold" aria-hidden />
@@ -89,33 +81,21 @@ export function Hero() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3" aria-hidden>
-          {projects.map((project, i) => (
-            <motion.a
-              key={project.id}
-              href="#projects"
-              {...tile(i)}
-              className="group relative flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-xl border border-line bg-surface p-4"
-              style={{ boxShadow: `inset 0 0 0 1px ${project.accent}22` }}
-            >
-              <span
-                className="absolute inset-y-0 left-0 w-1 opacity-70 transition-opacity group-hover:opacity-100"
-                style={{ background: project.accent }}
-              />
-              <span
-                className="font-mono text-3xl font-bold"
-                style={{ color: project.accent }}
-              >
-                {project.monogram}
-              </span>
-              <span className="font-mono text-xs text-muted">
-                {project.name}
-                <span className="mt-1 block text-foreground">
-                  {project.tagline[lang]}
-                </span>
-              </span>
-            </motion.a>
-          ))}
+        <motion.div {...motionProps(0.2)}>
+          <PlotSheet />
+        </motion.div>
+      </div>
+
+      <div className="border-t border-line">
+        <div className="mx-auto flex max-w-6xl items-center gap-4 px-5 py-3 md:px-8">
+          <span aria-hidden className="text-accent">◮</span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted">
+            {t.plot.coord}
+          </span>
+          <span aria-hidden className="h-px flex-1 bg-line" />
+          <span className="hidden font-mono text-[10px] uppercase tracking-[0.3em] text-muted sm:inline">
+            LÍNEA LVR·01
+          </span>
         </div>
       </div>
     </section>

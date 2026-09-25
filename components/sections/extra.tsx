@@ -3,6 +3,7 @@
 import { ArrowUpRight, GithubLogo } from "@phosphor-icons/react";
 import { useApp } from "@/components/app-provider";
 import { Reveal } from "@/components/ui/reveal";
+import { SurveyRule } from "@/components/ui/survey-rule";
 import { extraProjects } from "@/lib/site-config";
 
 export function Extra() {
@@ -10,10 +11,13 @@ export function Extra() {
 
   return (
     <section className="cv-auto mx-auto max-w-6xl px-5 py-24 md:px-8 md:py-28">
-      <Reveal className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <h2 className="max-w-md text-3xl font-semibold tracking-tight sm:text-4xl">
-          {t.extra.heading}
-        </h2>
+      <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 className="font-display text-4xl font-semibold uppercase leading-none tracking-tight sm:text-5xl">
+            {t.extra.heading}
+          </h2>
+          <SurveyRule />
+        </div>
         <p className="max-w-xs text-sm text-muted">{t.extra.intro}</p>
       </Reveal>
 
